@@ -1,0 +1,72 @@
+/* Modern table styles */
+table {
+  font-family: "Arial", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Pop-out effect on hover */
+td:hover,
+th:hover {
+  transform: translate(-20px, -20px); /* Move cell up */
+  box-shadow: 17px 17px 88px -13px rgba(0, 0, 0, 1);
+}
+
+/* Color coding for activity status */
+.cell-attended {
+  background-color: #d4edda; /* Green for attended */
+  color: #155724;
+}
+
+.cell-absent {
+  background-color: #f8d7da; /* Red for absent */
+  color: #721c24;
+}
+
+.cell-not-yet {
+  background-color: #fff3cd; /* Yellow for not yet attended */
+  color: #856404;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0.9;
+  font-size: 0.9em;
+}
+
+/* Apply styles for select elements */
+select {
+  background-color: white; /* Default background */
+  border: 1px solid brown; /* Default border */
+  color: #000 !important; /* Default text color */
+  padding: 5px; /* Default padding */
+}

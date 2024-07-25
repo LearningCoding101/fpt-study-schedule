@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "FPT Schedule Enhancer",
+    "version": "1.0",
+    "description": "Enhances the schedule table on the FPT schedule page with better UI features.",
+    "content_scripts": [
+      {
+        "matches": ["https://fap.fpt.edu.vn/Report/ScheduleOfWeek.aspx"],
+        "css": ["styles.css"],
+        "js": ["content.js"],
+              "run_at": "document_end"
+
+      }
+    ]
+  }
+  
